@@ -1,0 +1,113 @@
+/**
+ * DC Word Doc — Design Tokens
+ * Organization: Damayanti Crest
+ * Theme system supporting CSS custom properties with light and dark mode mappings.
+ */
+
+:root {
+  /* Brand Palette */
+  --dc-color-brand-50: #F0F5FF;
+  --dc-color-brand-100: #E1EDFE;
+  --dc-color-brand-200: #CADDFD;
+  --dc-color-brand-300: #A4C3FA;
+  --dc-color-brand-400: #739FF7;
+  --dc-color-brand-500: #4675F1;
+  --dc-color-brand-600: #2651E5;
+  --dc-color-brand-700: #1A3DC7;
+  --dc-color-brand-800: #0E3A99; /* Primary Brand Navy */
+  --dc-color-brand-900: #0A2566; /* Deep Corporate Navy */
+
+  /* Neutral Surface Palette (Light Mode Defaults) */
+  --dc-bg-app: #F1F5F9;
+  --dc-bg-surface: #FFFFFF;
+  --dc-bg-surface-elevated: #FFFFFF;
+  --dc-bg-page: #FFFFFF;
+  --dc-bg-muted: #F8FAFC;
+  --dc-bg-hover: #F1F5F9;
+  --dc-bg-active: #E2E8F0;
+
+  /* Typography Colors */
+  --dc-text-primary: #0F172A;
+  --dc-text-secondary: #475569;
+  --dc-text-muted: #64748B;
+  --dc-text-inverse: #FFFFFF;
+  --dc-text-link: #1A56DB;
+
+  /* Borders & Dividers */
+  --dc-border-subtle: #E2E8F0;
+  --dc-border-default: #CBD5E1;
+  --dc-border-strong: #94A3B8;
+
+  /* Semantic Feedback */
+  --dc-color-success: #10B981;
+  --dc-color-warning: #F59E0B;
+  --dc-color-danger: #EF4444;
+  --dc-color-info: #3B82F6;
+
+  /* Focus & Accents */
+  --dc-focus-ring: rgba(14, 58, 153, 0.35);
+  --dc-focus-border: #0E3A99;
+
+  /* Spacing Scale */
+  --dc-space-1: 0.25rem;  /* 4px */
+  --dc-space-2: 0.5rem;   /* 8px */
+  --dc-space-3: 0.75rem;  /* 12px */
+  --dc-space-4: 1rem;     /* 16px */
+  --dc-space-5: 1.25rem;  /* 20px */
+  --dc-space-6: 1.5rem;   /* 24px */
+  --dc-space-8: 2rem;     /* 32px */
+  --dc-space-10: 2.5rem;  /* 40px */
+  --dc-space-12: 3rem;    /* 48px */
+
+  /* Radii */
+  --dc-radius-sm: 0.25rem; /* 4px */
+  --dc-radius-md: 0.375rem;/* 6px */
+  --dc-radius-lg: 0.5rem;  /* 8px */
+  --dc-radius-xl: 0.75rem; /* 12px */
+  --dc-radius-full: 9999px;
+
+  /* Shadows */
+  --dc-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --dc-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --dc-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --dc-shadow-page: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  /* Z-Index Hierarchy */
+  --dc-z-base: 1;
+  --dc-z-ruler: 100;
+  --dc-z-ribbon: 200;
+  --dc-z-header: 300;
+  --dc-z-dropdown: 500;
+  --dc-z-modal: 1000;
+  --dc-z-toast: 1100;
+
+  /* Transitions */
+  --dc-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --dc-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Theme Overrides */
+.dark {
+  --dc-bg-app: #0B0F19;
+  --dc-bg-surface: #131B2E;
+  --dc-bg-surface-elevated: #1E293B;
+  --dc-bg-page: #1A2338;
+  --dc-bg-muted: #172138;
+  --dc-bg-hover: #1E293B;
+  --dc-bg-active: #334155;
+
+  --dc-text-primary: #F8FAFC;
+  --dc-text-secondary: #CBD5E1;
+  --dc-text-muted: #94A3B8;
+  --dc-text-inverse: #0F172A;
+  --dc-text-link: #60A5FA;
+
+  --dc-border-subtle: #24304A;
+  --dc-border-default: #334155;
+  --dc-border-strong: #475569;
+
+  --dc-focus-ring: rgba(96, 165, 250, 0.4);
+  --dc-focus-border: #60A5FA;
+
+  --dc-shadow-page: 0 4px 25px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.1);
+}
