@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F7F5F0;
+  --color-warm-ivory: #F0EEE8;
+  --color-charcoal: #242424;
+  --color-charcoal-deep: #181818;
+  --color-charcoal-card: #202020;
+  --color-muted-grey: #77746F;
+  --color-coral: #FF604A;
+  --color-coral-hover: #E84E38;
+  --color-coral-tint: #FFF0EE;
+  --color-soft-border: #E4E0D8;
+  --color-pure-white: #FFFFFF;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Cinzel', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #F7F5F0;
+    color: #242424;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F0EEE8;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D5D0C5;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF604A;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid #FF604A;
+    outline-offset: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom typography & animation helper utilities */
+.font-display {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+.font-editorial-serif {
+  font-family: 'Cinzel', serif;
+}
+
+.text-stroke-subtle {
+  -webkit-text-stroke: 1px rgba(36, 36, 36, 0.2);
+}
+
+.text-stroke-coral {
+  -webkit-text-stroke: 1px #FF604A;
+}
+
+/* Noise overlay texture for depth */
+.bg-noise {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-dark-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
